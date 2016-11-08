@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xlys="http://schemas.android.com/apk/res/com.example.arcmenue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+   >
+   
+      <com.example.arcmenue.PopMenus
+          android:id="@+id/id_menus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xlys:postion="left_bottom"
+        xlys:radues="100dp" >
+
+       <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:background="@drawable/composer_button" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/composer_icn_plus" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/composer_music" 
+            android:tag="music"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/composer_sleep"
+            android:tag="sleep" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/composer_camera" 
+            android:tag="camera"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/composer_place" 
+            android:tag="place"/>
+    </com.example.arcmenue.PopMenus>
+
+</RelativeLayout>
